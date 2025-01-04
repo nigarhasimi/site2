@@ -1,0 +1,100 @@
+:root {
+    --yasil: #a1c927;
+    --qirmizi: #fd634d;
+}
+header {
+    position: relative;
+    height: 100vh;
+    background: url('../img/headerbg.jpg') 60% 50%/cover;
+    text-align: center
+}
+nav, #title { 
+    position: absolute; 
+    width: 100%
+}
+nav { padding: 40px 50px }
+menu li a {
+    font: .8em 'Avenir Next Rounded Std', sans-serif;
+    text-transform: uppercase;
+    color: #fff
+}
+#title { bottom: 16vh}
+h1, h5 {
+    font-family: 'Myriad Pro';
+    text-transform: uppercase;
+    color: #fff;
+}
+h1 { font-size: 2em;}
+h2 {
+    font: 2.1em 'Open Sans';
+    text-transform: uppercase;
+}
+h3 {
+    font: 1.5em 'Open Sans';
+    padding: 20px 0;
+}
+h5 {
+    font-size: 1em;
+    letter-spacing: 3px;
+}
+h6 {
+    font: 1em 'Montserrat';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.bgag { background-color: #fff }
+.bgyasil { background-color: var(--yasil) }
+.bgqirmizi { background-color: var(--qirmizi) }
+.txtag { color: #fff }
+.txtyasil { color: var(--yasil) }
+.txtqirmizi { color: var(--qirmizi) }
+.vh50 { min-height: 50vh }
+.rtcpad { padding: 50px 40px;}
+
+#art4 { padding: 66px 0; }
+#art4 article { padding: 33px 10px; }
+#art4 article p {  
+    font: .9em/1.5 'Proxima Nova';
+}
+#fitnessfirst { background: url('../img/fitnessfirst.jpg') center/cover }
+#yourbody { background: url('../img/yourbody.jpg') center/cover }
+#lifestyle { background: url('../img/lifestyle.jpg') center/cover }
+#summeroffun { background: url('../img/summeroffun.jpg') center/cover }
+#grape { background: url('../img/grape.jpg') center/cover }
+#mango { background: url('../img/mango.jpg') center/cover }
+
+@media only screen and (min-width: 768px) {
+    header { text-align: initial;}
+    menu { 
+        float: right;
+        padding: 10px 0;
+    }
+    menu li { 
+        display: inline-block;
+        padding: 0 2vw;
+    }
+    #title { 
+        width: initial;
+        left: 7.5vw;
+        text-align: right;
+    }
+    h1 { font-size: 2.5em;}
+    h5 { padding: 10px 20px;}
+
+    .container { 
+        max-width: 1180px;
+        margin: auto;
+    }
+    .fleft { float: left }
+    .fright { float: right }
+    .row::after {
+        display: table;
+        content: '';
+        clear: both;
+    }
+    .col25 { width: 25% }
+    .col33 { width: 33.33% }
+    .col66 { width: 66.66% }
+}
